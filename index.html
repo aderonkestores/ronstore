@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#71865f">
+<title>ADERONKE STORES — Catalogue</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#top"><img src="logo.png" alt="ADERONKE STORES"></a>
+  <button class="cart-trigger" id="openCart" aria-label="Open shopping cart">
+    <span class="cart-icon">🛒</span><span class="cart-badge" id="cartCount">0</span>
+  </button>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">ADERONKE STORES</p>
+    <h1>Find something<br><em>you'll love.</em></h1>
+    <p class="hero-text">Explore our curated selection of fragrances, personal care essentials, clothing and everyday favourites. Add what you like to your enquiry cart and contact us for current price and availability.</p>
+    <a class="hero-cta" href="#collection">Explore collection <span>→</span></a>
+  </div>
+  <div class="hero-art"><div class="orb one"></div><div class="orb two"></div><div class="glow"></div></div>
+</section>
+
+<section class="collection" id="collection">
+  <div class="category-scroller" id="categories"></div>
+  <div class="heading-row">
+    <div>
+      <p class="eyebrow">SHOP THE COLLECTION</p>
+      <h2>Featured products</h2>
+    </div>
+    <label class="search"><span>⌕</span><input id="searchInput" placeholder="Search products..." autocomplete="off"></label>
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-brand"><img src="logo.png" alt="ADERONKE STORES"><p>Quality finds. Easy enquiries. Personal service.</p></div>
+  <div class="contact"><strong>Contact us</strong><a href="https://wa.me/2347039586838" target="_blank" rel="noopener">WhatsApp: +234 703 958 6838</a><span>Osogbo, Osun State, Nigeria</span></div>
+</footer>
+
+<div class="shade" id="shade"></div>
+<aside class="cart" id="cart" aria-label="Your enquiry cart">
+  <div class="cart-head">
+    <div><p class="eyebrow">YOUR SELECTION</p><h2>Enquiry cart</h2><small id="timer">Cart timer starts when you add a product</small></div>
+    <button class="close" id="closeCart" aria-label="Close cart">×</button>
+  </div>
+  <div class="cart-list" id="cartItems"></div>
+  <div class="empty" id="empty"><div class="empty-icon">🛒</div><h3>Your cart is empty</h3><p>Add products you want to ask about. You can open the cart yourself whenever you're ready.</p></div>
+  <div class="cart-bottom">
+    <p class="notice">Prices are provided on request. Availability may change.</p>
+    <button class="checkout" id="checkout">Enquire on WhatsApp →</button>
+    <button class="clear" id="clearCart">Clear selection</button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
